@@ -11,6 +11,13 @@ $$ T(n) =
     \end{cases}
 $$
 
+$T(n/13) = T(n/13/13) + 5 \Rightarrow T(n/13^2) + 5$ </br>
+$T(n/13^2) + 5 + 5 \Rightarrow T(n/13^2) + 10$ </br>
+$T(n/13) = T(n/13^3) + 10$ </br>
+$T(n/13^3) + 10 + 5 \Rightarrow T(n/13^3) + 15$ or $T(n/13^i) + 5i$ </br>
+Let $i = log_{13}n$ </br>
+$T(n/n) + 5log_{13}n \Rightarrow T(n) \in \Theta(5logn)$
+
 2.
 $$ T(n) =
     \begin{cases}
