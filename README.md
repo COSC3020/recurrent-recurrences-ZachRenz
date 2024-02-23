@@ -11,12 +11,7 @@ $$ T(n) =
     \end{cases}
 $$
 
-$T(n/13) = T(n/13/13) + 5 \Rightarrow T(n/13^2) + 5$ </br>
-$T(n/13^2) + 5 + 5 \Rightarrow T(n/13^2) + 10$ </br>
-$T(n/13) = T(n/13^3) + 10$ </br>
-$T(n/13^3) + 10 + 5 \Rightarrow T(n/13^3) + 15$ or $T(n/13^i) + 5i$ </br>
-Let $i = log_{13}n$ </br>
-$T(n/n) + 5log_{13}n \Rightarrow T(n) \in \Theta(5logn)$
+$T(n) \in \Theta(logn)$
 
 2.
 $$ T(n) =
@@ -26,12 +21,7 @@ $$ T(n) =
     \end{cases}
 $$
 
-$T(n/13) = 13T(n/13/13) + 5 \Rightarrow 13T(n/13^2) + 5$ </br>
-$13(13T(n/13^2) + 5) + 5 \Rightarrow 13^2T(n/13^2) + 65 + 5$ </br>
-$T(n/13) = 13^2T(n/13^3) + 70$ </br>
-$13(13^2T(n/13^3 + 70) + 5 \Rightarrow 13^3T(n/13^3) + 915$ or $13^iT(n/13^i) + C$ </br>
-Let $i = log_{13}n$ </br>
-$nT(n/n) + C \Rightarrow T(n) \in \Theta(n)$
+$T(n) \in \Theta(n)$
 
 3.
 $$ T(n) =
@@ -40,3 +30,5 @@ $$ T(n) =
         13 T\left(\frac{n}{13}\right) + 2n & n > 1
     \end{cases}
 $$
+
+$T(n) \in \Theta(nlogn)$
