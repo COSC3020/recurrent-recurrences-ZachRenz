@@ -26,6 +26,13 @@ $$ T(n) =
     \end{cases}
 $$
 
+$T(n/13) = 13T(n/13/13) + 5 \Rightarrow 13T(n/13^2) + 5$ </br>
+$13(13T(n/13^2) + 5) + 5 \Rightarrow 13^2T(n/13^2) + 65 + 5$ </br>
+$T(n/13) = 13^2T(n/13^3) + 70$ </br>
+$13(13^2T(n/13^3 + 70) + 5 \Rightarrow 13^3T(n/13^3) + 915$ or $13^iT(n/13^i) + C$ </br>
+Let $i = log_{13}n$ </br>
+$nT(n/n) + C \Rightarrow T(n) \in \Theta(n)$
+
 3.
 $$ T(n) =
     \begin{cases}
